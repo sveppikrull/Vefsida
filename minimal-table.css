@@ -1,0 +1,82 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@sveppikrull 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+mdn
+/
+learning-area
+281
+3.6k12.2k
+Code
+Issues
+3
+Pull requests
+4
+Actions
+Projects
+Security
+Insights
+learning-area/html/tables/basic/minimal-table.css
+@chrisdavidmills
+chrisdavidmills adding html table examples
+Latest commit 3971b29 on 24 Jan 2017
+ History
+ 1 contributor
+35 lines (28 sloc)  465 Bytes
+  
+html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

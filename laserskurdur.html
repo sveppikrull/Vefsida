@@ -1,0 +1,285 @@
+
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Laser cutter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+                                <li><a href="aboutme2.html">About Me</a></li>
+								<li>
+									<a href="#">University of Iceland</a>
+									<ul>
+                                        <li>
+											<a href="#">VÉL403G</a>
+											<ul>
+												<li><a href="documentation.html">Documentation</a></li>
+											</ul>
+										</li>
+                                        <li>
+											<a href="#">Stærðfræði</a>
+											<ul>
+												<li><a href="Staerdfraeigreining_IV___Heimaverkefni-DEH_SK%20copy.pdf">Lokaverkefni í Greiningu IV</a></li>
+                                                <li>
+											<a href="#">Töluleg Greining</a>
+											<ul>
+												<li><a href="T_luleg_verkefni_1__Copy_.pdf">Heimaverkefni 1</a></li>
+                                                <li><a href="T_luleg_greining___Verkefni_2.pdf">Heimaverkefni 2</a></li>
+											</ul>
+										</li>
+											</ul>
+										</li>
+                                        
+								
+									</ul>
+								</li>
+								<li><a href="personalwork.html">Personal Work</a></li>
+								<li><a href="Ferilskr%C3%A1%20-%20Sverrir%20Kristinson%20141298-2679%20copy.pdf">Resume</a></li>
+							</ul>
+						</nav>
+
+				</div>
+ a
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<h2><a href="#">Project 2 - Laser cutter</a></h2>
+							</header>
+                            <section class="">
+
+									<div class="">
+										<div class="">
+							     <center>
+								<header>
+									<h3>Project description</h3>
+								</header>
+                                     <center>
+                                           <p>
+                                             </p>
+								<p>
+                                    On this page I will be documenting the process I went through when working on Project 2 in the course VÉL403G at the University of Iceland. The project was to first measure the kerf of one the laser cutters at FabLab, and then to use the kerf when designing a parametric and pressfit object which was then manufactured with the same laser cutter. For this project I used 4mm thick plywood that was supplied by FabLab. For the kerf measurement I was working with my classmate Arnór Bjarki Ásþórsson.
+
+
+								</p>
+                                           <p>
+                                             </p>
+                                         <header>
+									<h3>Kerf measurements</h3>
+								</header>
+                                <p>
+                                     The kerf of a laser cutter is the amount of material that the laser cutter destroys when it cuts through the wood. When the laser cuts through the wood a part of the wood burns off and so the finished shape is a bit smaller than when you drew it. To adjust for it in the manufacturing we add the kerf to all the lines so when the laser cutter is finished everything should fit together as you designed it.
+                                     To measure the kerf we drew the sketch below in Fusion 360. The idea behind the sketch is that the laser cutter cuts out the big rectangle and then cuts vertical lines making 20 smaller rectangles. In an ideal world each rectangle would have 1/20th of the total area and they would fit together perfectly with no space between them. However when we line up the smaller rectangles tightly within the big one there is some space left on one side. We then measure that space and divide it by 21(one for each cut) and that gives us the kerf of the laser cutter.
+
+
+                                </p>
+                                          <p>
+                                    <center> 
+                                    <a  class=""><img src="Myndir laser cutter/kerf-sketch.jpg" alt="" width= "500" /></a>
+                                    </center>
+                                </p>
+                                <p>
+                                   Once we had cut out the sketch(more on how to operate the laser cutter later) we found out that; that the smaller rectangles were cut at a bit of an angle and that the combined kerf was that small that it was really difficult to measure it properly. To combat that we lined up the rectangles with alternating sides facing up and omitted one rectangle from the lineup.
+                                   On the picture below you can see an exaggerated version of how the cross section of the smaller rectangles looked from the side. As you can see they are not perfect rectangles but when they are lined up with alternating sides facing up they fit together as they should.
+
+                                         </p>
+                                          <p>
+                                    <center> 
+                                    <a  class=""><img src="Myndir laser cutter/halli-kerf.jpeg" alt="" width= "500" /></a>
+                                    </center>
+                                </p>
+                                <p>
+                                    We then measured the distance as you can see below and got the value 12.21 mm. We then subtracted one rectangle(10mm) from that value and divided the remaining value by 20. The resulting kerf was 0.11mm. That kerf was then used in later stages of this project. When we calculated the kerf we made the approximation that the kerf didn’t affect the rectangle we removed, so the kerf value isn't exactly correct but it was close enough and didn’t affect the finished product later on.
+                                    </p>
+                                    <center> 
+                                    <a  class=""><img src="Myndir%20laser%20cutter/153706257_290025775881110_6672008993146213946_n.jpeg" alt="" width= "500" /></a>
+                                    </center>
+                                         <header>
+                                             <p>
+                                             </p>
+									<h3>Designing a parametric and pressfit object</h3>
+								</header>
+                                <p>
+                                    At first I was unsure of what kind of object I wanted to make. On one hand I knew that my limited experience working with both Fusion 360 and laser cutters meant that I could not make something ridiculously ambitious. On the other hand I wanted to make something that I would actually use and not just some decoration. So while I was looking at one of the <a href="https://www.youtube.com/watch?v=9U2JPfkQpsE">videos</a> that accompanied the project description about making finger-joints in Fusion I saw a video from the Autodesk Fusion youtube channel in the recommended section about how to make a laptop stand(<a href="https://www.youtube.com/watch?v=7riGolu7BpA">video</a>). Having been forced to spend a lot of time hunched at my desk in front of my laptop during Covid I immediately knew that this was a project that would come in handy for me.
+                                    
+                                
+
+                                </p>
+                                <p>
+                                    <br>
+                                         </p>
+                                <div class="row gtr-25">
+				                <div class="col-6">
+								<a href="#" class="image fit"><img src="myndir laser cutter/fusion-mynd-1.png" alt="" width= "400" /></a>
+								</div>
+								<div class="col-6">
+								<a href="#" class="image fit"><img src="myndir laser cutter/fusion-mynd-2.png" alt="" width= "500" /></a>
+								</div>
+                                </div>   
+                                       
+                                <p>
+                                    <br>
+                                    When I was drawing the laptop stand in Fusion I followed the video quite closely but made the measurements in accordance to my own laptop. In addition to that I also added a side pocket on one of the sides where I can store my AirPod case, since I am constantly losing track of where I leave it.
+                                    When designing the laptop stand I made sure to include as many user parameters as I could, both since it was a part of the project but also since I knew it would come in handy if I made a mistake or wanted to tweak the design later on in the process.
+                                </p>
+                                     <center> 
+                                    <a  class=""><img src="Myndir laser cutter/parametrur.png" alt="" width= "800" /></a>
+                                    </center>
+                                         
+                                      <p>
+                                    <br>
+                                         </p>    
+    
+                                <header>
+									<h3>Making the design ready for the laser cutter</h3>
+								</header>
+                                <p>
+                                    Once I had finished my design in Fusion it was time to export the surfaces as DXF files to a program that works with vector images, I used the program <a href="https://inkscape.org/">Inkscape</a>. It was at this stage that I implemented the kerf I had measured into the design. To do that I used a <a href="https://apps.autodesk.com/FUSION/en/Detail/Index?id=7634902334100976871&os=Win64&appLang=en&fbclid=IwAR0IVszqsgDLgNB78w1LkHynn24cdPsxf1_k05yW9OYWPegDvtFV1IGkx9Q">plugin</a> for Fusion that takes a surface and a value of kerf and makes the appropriate adjustments and then exports the surface as a DXF file. To use this plugin I just downloaded it off the website. Closed Fusion and opened it back up. Then under the “create” menu the last link says “Save DXF for laser cutting”. When you press that you have to select a surface to export and then put in your kerf and the plugin exports the surface as a DXF file.
+
+                                </p>
+                                    <center> 
+                                        <br>
+                                    <a  class=""><img src="Myndir laser cutter/kerfplug.png" alt="" width= "600" /></a>
+                                    </center>
+                                         <br>
+                                <p>
+                                    
+                                    Now it was time to finish the vector image so that I could export it as a PDF and then bring it to the laser cutter to cut the wood. When I imported the DXF files to Inkscape I tried to fill in the surfaces with a color and noticed that not all the lines were connected, almost every corner was made up of two independent lines rather than one continuous one. To fix this I followed a <a href="https://www.youtube.com/watch?v=zN0jkUGdObw">video</a> that was listed in the project description. This process is a bit tedious but not complicated. I just ungrouped all the lines, then selected the two lines I wanted to join and highlighted the endpoints of those lines and pressed “join selected nodes”. Once I had done that I tried again to fill in the surfaces with the color red and this time it worked. On the picture below there are two surfaces that have been filled in with the color red, the right one has had all its lines fixed, the left one is straight from Fusion. 
+
+                                </p>
+                                    <center> 
+                                        <br>
+                                    <a  class=""><img src="Myndir laser cutter/fillin.png" alt="" width= "600" /></a>
+                                    </center>
+                                 <p>
+                                     <br>
+                                    At this point I thought everything was finished and I could just export the file as a PDF and cut out the surfaces. However when I was inspecting the drawing in Inkscape I noticed not all of the slots where the different pieces would connect were the same width. So I went into Fusion and noticed that the feet of the laptop stand were 8mm thick instead of 4mm like the wood I would be using. I had somehow accidentally extruded the feet twice. I feared this I would be a time consuming error however since the design was made parametrically it took almost no time at all. I was unable to delete one of the extrusions so I just adjusted them two be half of the wood thickness each and all the other pieces adjusted automatically. However I had to redo the steps in Inkscape as most of the surfaces changed slightly.
+                                    Now the final steps, to make it so that the laser cutter knows which lines to cut I adjusted the line thickness to 0.02mm and made the lines red(isn’t always necessary, but made a difference when we did the kerf measurements). Then I just adjusted the workspace to match the wooden plank I would be using (600mm x 300mm) and placed the surfaces within the workspace. Now I could just save the file as a PDF file and take it to the laser cutter.
+
+                                </p>
+                                  <header>
+                                             <p>
+                                             </p>
+									<h3>Manufacturing the design</h3>
+								</header>       
+                                         
+                                <p>
+                                   Now it was time to cut out the wood. To do that I followed this video to learn how to operate the laser cutter. Then I just inserted a USB stick with the drawing on it onto the computer beside the laser cutter and pressed print. I then made sure that all the properties were appropriately tuned for the wood (speed, force and Hz). Then I just finished the process and assembled the laptop stand. Below are pictures I took of the process and the finished product.
+                                </p>
+                                <div class="row gtr-25">
+				                <div class="col-6">
+								<a href="#" class="image fit"><img src="myndir laser cutter/lokamynd2.jpg" alt="" width= "500" /></a>
+								</div>
+								<div class="col-6">
+								<a href="#" class="image fit"><img src="myndir laser cutter/lokamynd3.jpg" alt="" width= "500" /></a>
+								</div>
+                                </div>  
+                                         <br>
+                                         <div class="row gtr-25">
+				                <div class="col-6">
+								<a href="#" class="image fit"><img src="myndir laser cutter/lokamynd6.jpg" alt="" width= "500" /></a>
+								</div>
+								<div class="col-6">
+								<a href="#" class="image fit"><img src="myndir laser cutter/lokamynd5.jpg" alt="" width= "500" /></a>
+								</div>
+                                </div>   
+                                <p>
+                                    
+                                </p>
+                                <header>
+				                <h3>Project workload</h3>
+								</header>
+                                <table>         
+                                <tr>
+                                <td>Hi, I'm your first cell.</td>
+                                <td>I'm your second cell.</td>
+                                <td>I'm your third cell.</td>
+                                <td>I'm your fourth cell.</td>
+                                </tr>
+                                    <tr>
+  <td>Hi, I'm your first cell.</td>
+  <td>I'm your second cell.</td>
+  <td>I'm your third cell.</td>
+  <td>I'm your fourth cell.</td>
+</tr>
+                                    </table>
+                                
+                                         
+								
+                                    </center>
+                                    </center>
+                                        </div>
+                                        </div>
+							</section>
+						</article>
+						<hr />
+
+
+
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Social Media</h3>
+										</header>
+										<p>Here below are links to my social media</p>
+										<ul class="icons">
+											<li><a href="http://www.twitter.com/svessikrull" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="http://www.facebook.com/sveppikrull14" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="http://www.instagram.com/sveppikrull" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
